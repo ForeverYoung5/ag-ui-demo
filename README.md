@@ -18,20 +18,6 @@
 - pnpm 9+（推荐，亦可使用 npm，但脚本示例默认 pnpm）
 - 可选：本地安装 LangGraph CLI（若不走 `npm run dev:agent`）
 
-## 环境变量
-
-在 `backend/.env` 创建配置文件，常用键如下：
-
-| 变量 | 作用 |
-| --- | --- |
-| `PORT` | 后端服务端口，默认 `3001` |
-| `FRONTEND_URL` | 允许的前端来源，默认 `http://localhost:5173` |
-| `TENCENT_SECRET_ID` / `TENCENT_SECRET_KEY` | 腾讯混元调用凭据。缺省时自动进入 mock 模式 |
-| `MOCK_MODE` | `true/false`，覆盖自动 mock 判断 |
-| `SUPABASE_URL` / `SUPABASE_ANON_KEY` | Supabase 相关集成可选 |
-| `LOG_LEVEL`、`CORS_ENABLED` | 运行日志与 CORS 控制 |
-
-配置加载逻辑位于 `backend/src/config/index.ts`，启动时会校验必填项并打印当前状态。
 
 ## 快速开始
 
