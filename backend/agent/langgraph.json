@@ -1,0 +1,13 @@
+{
+  "node_version": "20",
+  "dockerfile_lines": [],
+  "dependencies": ["."],
+  "graphs": {
+    "starterAgent": "./src/agent.ts:graph",
+    "generative_ui_frontend_tools": "./src/generative-ui-frontend-tools.ts:agenticChatGraph",
+    "generative_ui_backend_tools": "./src/generative-ui-backend-tools.ts:agenticChatGraph",
+    "agent_state": "./src/agent_state.ts:agenticGenerativeUiGraph",
+    "human_in_the_loop":"./src/human_in_the_loop.ts:humanInTheLoopGraph"
+  },
+  "env": ".env"
+}
